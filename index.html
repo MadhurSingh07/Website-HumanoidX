@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HumanoidX</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"><!--connect html file with css-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Dancing+Script&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+    <body>
+            <section id="banner">
+                <img src="images/logo_white.png" class="logo">
+                <div class="banner-text">
+                    <h1>HumanoidX VITCC</h1>
+                    <p>Integrating Humanity and Technology Through Innovation</p>
+                    <div class="banner-btn">
+                        <a href="#"><span></span> Find Out</a>
+                        <a href="#"><span></span> Read More</a>
+                    </div>
+                </div>
+            </section>
+            <div id="sideNav">
+                <nav>
+                    <ul>
+                        <li><a href="#banner">HOME</a></li>
+                        <li><a href="#about-us">ABOUT US</a></li>
+                        <li><a href="#departments">DEPARTMENTS</a></li>
+                        <li><a href="#blogs">BLOG</a></li>
+                        <li><a href="#">OUR PROJECTS</a></li>
+                        <li><a href="#">OUR TEAM</a></li>
+                        <li><a href="#footer">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menuBtn">
+                <img src="images/menu.png" id="menu">
+                <script>
+                    var menuBtn= document.getElementById("menuBtn")
+                    var sideNav= document.getElementById("sideNav")
+                    var menu= document.getElementById("menu")
+                    sideNav.style.right="-250px"
+                    menuBtn.onclick=function()
+                    {
+                        if(sideNav.style.right=="-250px"){
+                            sideNav.style.right="0"
+                            menu.src ="images/close.png";
+                        }
+                        else{
+                            sideNav.style.right="-250px"
+                            menu.src ="images/menu.png";
+                        }
+                    }
+                </script>
+            </div>
+            <!--About Us-->
+            <section id="about-us">
+                <div class="title-text">
+                    <p>ABOUT US</p>
+                    <h1>Who are We?</h1>
+                </div>
+                <div class="about-us-box">
+                    <div class="info">
+                      <h1>Building Human-like Robots</h1>  
+                    <div class="description">
+                        <div class="descp-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="descp-text">
+                            <p>Technological advancements in the world 
+                                are are not just fascinating but also 
+                                exhilarating. To the inquisitive person 
+                                and techie in you, we present to you, 
+                                The Humanoid Club</p>
+                        </div>    
+                    </div>
+                    <h1>Preparing Students for Tomorrow</h1>  
+                    <div class="description">
+                        <div class="descp-icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <div class="descp-text">
+                            <p>With this club, we just not aim at making
+                                humanoids but also prepare ourselves for the 
+                                future technology as community of engineers who
+                                share a passion for the same               
+                            </p>
+                        </div>    
+                    </div>
+                    </div>
+                    <div class="info-img">
+                        <img src="images/humanoid-robot.jpeg"> 
+                      </div>
+                </div>
+            </section> 
+            <!--Departments-->
+            <section id="departments">
+                <div class="title-text">
+                    <p>DEPARTMENTS</p>
+                    <h1>How we Manage our Work?</h1>
+                </div>
+                <div class="dept-box">
+                    <div class="branch">
+                        <img src="images/pic-1.png">
+                        <div class="overlay"></div>
+                        <div class="branch-desp">
+                            <h3>Marketing and Management</h3>
+                            <hr>
+                            <p>Description of Management and Marketing</p>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <img src="images/pic-2.png">
+                        <div class="overlay"></div>
+                        <div class="branch-desp">
+                            <h3>Electrical and Programming</h3>
+                            <hr>
+                            <p>Description of Electrical and Programming</p>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <img src="images/pic-3.png">
+                        <div class="overlay"></div>
+                        <div class="branch-desp">
+                            <h3>Design and Automation</h3>
+                            <hr>
+                            <p>Description of Design and Automation</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Blogs with 3 div in one row-->
+            <section id="blogs">
+                <div class="title-text">
+                    <p>BLOGS</p>
+                    <h1>Stuff for the Geeks</h1>
+                </div>
+                <div class="container">
+                    <div class="column"> 
+                        <div class="head">
+                            <img src="images/image-1.png">
+                            <div class="title">
+                                <h3>ASIMO <a href="blogs.html"><i class="fas fa-robot"></i></a></h3>
+                            </div>   
+                        </div>
+                            <p>ASIMO (Advanced Step in Innovative Mobility) is a humanoid robot created by Honda in 2000. It is currently displayed in the Miraikan museum in Tokyo, Japan. 
+                                On 8 July 2018, Honda posted the last update of Asimo through their official page stating that it would be ceasing all development and production of Asimo robots in order to focus on more practical applications using the technology developed through Asimo's lifespan. The name was chosen in honor of Isaac Asimov.</p>
+                    </div>
+                    <div class="column">
+                        <div class="head">
+                            <img src="images/image-2.png">
+                            <div class="title">
+                                <h3>SOPHIA<a href="blogs.html"><i class="fas fa-robot"></i></a></h3>
+                            </div>
+                        </div>
+                        <p>Sophia is a social humanoid robot developed by Hong Kong-based company Hanson Robotics.[1] Sophia was activated on February 14, 2016,[2] and made her first public appearance at South by Southwest Festival (SXSW) in mid-March 2016 in Austin, Texas, United States.[3]
+
+                            Sophia has been covered by media around the globe and has participated in many high-profile interviews. In October 2017, Sophia "became" a Saudi Arabian citizen, the first robot to receive citizenship of any country. In November 2017, Sophia was named the United Nations Development Programme's first ever Innovation Champion, and is the first non-human to be given any United Nation title.</p>
+                    </div>
+                    <div class="column">
+                        <div class="head">
+                            <img src="images/image-3.png">
+                            <div class="title">
+                                <h3>ATLAS<a href="blogs.html"><i class="fas fa-robot"></i></a></h3>
+                            </div>
+                        </div>
+                        <p>Atlas is a bipedal humanoid robot primarily developed by the American robotics company Boston Dynamics with funding and oversight from the U.S. Defense Advanced Research Projects Agency (DARPA). The robot was initially designed for a variety of search and rescue tasks, and was unveiled to the public on July 11, 2013.</p>   
+                    </div>
+                </div>
+                <br>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LikxFZZO2sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> 
+            </section>
+            <!--footer-->
+            <section id="footer">
+                <div class="title-text">
+                    <p>CONTACT US</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/humanoidx.vitcc/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>   
+            </section>
+    </body>
+</html>
